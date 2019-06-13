@@ -32,13 +32,13 @@ function Paper(x, y, config) {
 
 	return {
 		position: new _Vector2D2.default(x, y),
-		rotationSpeed: Math.random() * 600 + 800,
+		rotationSpeed: Math.random() * 1200 + 1600,
 		angle: angle,
-		rotation: config.DEG_TO_RAD * Math.random() * 11.25,
+		rotation: config.DEG_TO_RAD * Math.random() * 360,
 		cosA: 1.0,
 		size: Math.random() * 2 + 4,
 		oscillationSpeed: Math.random() * 1.5 + 0.5,
-		xSpeed: 80.0,
+		xSpeed: 120.0,
 		ySpeed: Math.random() * 120 + 50.0,
 		corners: corners,
 		time: Math.random(),

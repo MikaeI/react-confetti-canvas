@@ -40,7 +40,7 @@ exports.default = function (canvas, config) {
 
 			_Paper2.default.bounds = new _Vector2D2.default(this.canvasWidth, this.canvasHeight);
 			for (var i = 0; i < config.PAPER_COUNT; i++) {
-				this.confettiPapers[i] = new _Paper2.default(this.canvasWidth / 2, 0, config);
+				this.confettiPapers[i] = new _Paper2.default(Math.random() * 200 + (this.canvasWidth / 2 - 100), 0, config);
 			}
 
 			_Ribbon2.default.bounds = new _Vector2D2.default(this.canvasWidth, this.canvasHeight);

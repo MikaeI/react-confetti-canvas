@@ -23,8 +23,8 @@ exports.default = function (canvas, config) {
 
 			this.canvasWidth = canvas.parentNode.offsetWidth;
 			this.canvasHeight = canvas.parentNode.offsetHeight;
-			canvas.width = this.canvasWidth / window.devicePixelRatio;
-			canvas.height = this.canvasHeight / window.devicePixelRatio;
+			// canvas.width = this.canvasWidth / window.devicePixelRatio;
+			// canvas.height = this.canvasHeight / window.devicePixelRatio;
 			_Paper2.default.bounds = new _Vector2D2.default(this.canvasWidth, this.canvasHeight);
 			_Ribbon2.default.bounds = new _Vector2D2.default(this.canvasWidth, this.canvasHeight);
 		},

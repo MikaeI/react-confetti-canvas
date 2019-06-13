@@ -38,7 +38,7 @@ function Paper(x, y, config) {
 		cosA: 1.0,
 		size: Math.random() * 2 + 4,
 		oscillationSpeed: Math.random() * 0.5 + 0.25,
-		xSpeed: 60.0,
+		xSpeed: 100.0,
 		ySpeed: Math.random() * 300 + 150.0,
 		corners: corners,
 		time: Math.random(),

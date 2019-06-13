@@ -37,7 +37,7 @@ function Paper(x, y, config) {
 		rotation: config.DEG_TO_RAD * Math.random() * 360,
 		cosA: 1.0,
 		size: Math.random() * 2 + 4,
-		oscillationSpeed: Math.random() * 3 + 1.5,
+		oscillationSpeed: Math.random() * 0.5 + 0.25,
 		xSpeed: 120.0,
 		ySpeed: Math.random() * 120 + 50.0,
 		corners: corners,

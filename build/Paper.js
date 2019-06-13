@@ -20,7 +20,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  */
 function Paper(x, y, config) {
 
-	var angle = config.DEG_TO_RAD * Math.random() * 360;
+	var angle = config.DEG_TO_RAD * Math.random() * 11.25;
 	var corners = [];
 	var randomIndex = config.COLOR_INDEX(config.COLORS);
 
@@ -34,9 +34,9 @@ function Paper(x, y, config) {
 		position: new _Vector2D2.default(x, y),
 		rotationSpeed: Math.random() * 600 + 800,
 		angle: angle,
-		rotation: config.DEG_TO_RAD * Math.random() * 180,
+		rotation: config.DEG_TO_RAD * Math.random() * 11.25,
 		cosA: 1.0,
-		size: Math.random() * 5 + 2.5,
+		size: Math.random() * 4 + 2,
 		oscillationSpeed: Math.random() * 1.5 + 0.5,
 		xSpeed: 80.0,
 		ySpeed: Math.random() * 120 + 50.0,

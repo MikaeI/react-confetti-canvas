@@ -34,9 +34,9 @@ function Paper(x, y, config) {
 		position: new _Vector2D2.default(x, y),
 		rotationSpeed: Math.random() * 600 + 800,
 		angle: angle,
-		rotation: config.DEG_TO_RAD * Math.random() * 360,
+		rotation: config.DEG_TO_RAD * Math.random() * 180,
 		cosA: 1.0,
-		size: 5.0,
+		size: Math.random() * 5 + 2.5,
 		oscillationSpeed: Math.random() * 1.5 + 0.5,
 		xSpeed: 80.0,
 		ySpeed: Math.random() * 120 + 50.0,
@@ -63,10 +63,10 @@ function Paper(x, y, config) {
 			this.cosA = Math.cos(config.DEG_TO_RAD * this.rotation);
 			this.position.x += Math.cos(this.time * this.oscillationSpeed) * this.xSpeed * duration;
 			this.position.y += this.ySpeed * duration;
-			if (this.position.y > Paper.bounds.y) {
-				this.position.x = Math.random() * Paper.bounds.x;
-				this.position.y = 0;
-			}
+			// if (this.position.y > Paper.bounds.y) {
+			// 	this.position.x = Math.random() * Paper.bounds.x;
+			// 	this.position.y = 0;
+			// }
 		},
 
 

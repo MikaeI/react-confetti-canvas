@@ -38,7 +38,7 @@ exports.default = function (canvas, config) {
 
 			this.resize();
 
-			_Paper2.default.bounds = new _Vector2D2.default(this.canvasWidth / window.devicePixelRatio, this.canvasHeight / window.devicePixelRatio);
+			_Paper2.default.bounds = new _Vector2D2.default(this.canvasWidth * window.devicePixelRatio, this.canvasHeight * window.devicePixelRatio);
 			for (var i = 0; i < config.PAPER_COUNT; i++) {
 				this.confettiPapers[i] = new _Paper2.default(Math.random() * 400 + (this.canvasWidth / 2 - 200), Math.random() * -50 - 25, config);
 			}

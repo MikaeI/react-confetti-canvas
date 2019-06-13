@@ -9,8 +9,8 @@ exports.default = function (canvas, config) {
 	var canvasConfetti = {
 
 		canvasParent: canvas.parentNode,
-		canvasWidth: Math.floor(canvas.parentNode.offsetWidth / window.devicePixelRatio),
-		canvasHeight: Math.floor(canvas.parentNode.offsetHeight / window.devicePixelRatio),
+		canvasWidth: canvas.parentNode.offsetWidth,
+		canvasHeight: canvas.parentNode.offsetHeight,
 		context: canvas.getContext('2d'),
 		interval: null,
 		confettiRibbons: [],
@@ -21,10 +21,10 @@ exports.default = function (canvas, config) {
    */
 		resize: function resize() {
 
-			this.canvasWidth = this.canvasParent.offsetWidth;
-			this.canvasHeight = this.canvasParent.offsetHeight;
-			canvas.width = this.canvasWidth * window.devicePixelRatio;
-			canvas.height = this.canvasHeight * window.devicePixelRatio;
+			this.canvasWidth = canvas.parentNode.offsetWidth;
+			this.canvasHeight = canvas.parentNode.offsetHeight;
+			canvas.width = this.canvasWidth / window.devicePixelRatio;
+			canvas.height = this.canvasHeight / window.devicePixelRatio;
 			_Paper2.default.bounds = new _Vector2D2.default(this.canvasWidth, this.canvasHeight);
 			_Ribbon2.default.bounds = new _Vector2D2.default(this.canvasWidth, this.canvasHeight);
 		},

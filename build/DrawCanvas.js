@@ -9,8 +9,8 @@ exports.default = function (canvas, config) {
 	var canvasConfetti = {
 
 		canvasParent: canvas.parentNode,
-		canvasWidth: canvas.parentNode.offsetWidth,
-		canvasHeight: canvas.parentNode.offsetHeight,
+		canvasWidth: Math.floor(canvas.parentNode.offsetWidth * window.devicePixelRatio),
+		canvasHeight: Math.floor(canvas.parentNode.offsetHeight * window.devicePixelRatio),
 		context: canvas.getContext('2d'),
 		interval: null,
 		confettiRibbons: [],
